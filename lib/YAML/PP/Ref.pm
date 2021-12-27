@@ -44,11 +44,17 @@ Parser from it.
 Ingy has done that for several languages, and the one for Perl can be found
 here: L<https://metacpan.org/dist/YAML-Parser>.
 
+This module exchanges the default L<YAML::PP::Parser> parsing backend with
+L<YAML::Parser>. So you can profit from a Parser 100% compliant to
+the spec, but L<YAML::PP>'s functionalities on top of that, like loading
+the parsing events into a data structure, and using the various L<YAML::PP>
+plugins.
+
 At the time of this release, it is quite slow compared to other Perl YAML
 modules, but it might not make a difference for you depending on your
-application.
+application. The grammar for YAML 1.2 is not optimized for speed.
 
-Also the error messages are not really helpful.
+Also the error messages are not really helpful currently.
 
 Check out the documentation of L<YAML::Parser> regularly, these things might
 have changed meanwhile.

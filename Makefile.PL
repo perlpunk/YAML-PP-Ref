@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.008000;
+use 5.014000;
 
 use ExtUtils::MakeMaker;
 
@@ -14,7 +14,7 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "YAML-PP-Ref",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.008000",
+  "MIN_PERL_VERSION" => "5.014000",
   "NAME" => "YAML::PP::Ref",
   "PREREQ_PM" => {
     "Scalar::Util" => "1.07",
