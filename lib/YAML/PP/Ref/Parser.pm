@@ -13,7 +13,7 @@ sub parse {
     my $string;
     if ($reader->can('open_handle')) {
         if (openhandle($reader->input)) {
-            $string = do { local $/; $reader->open_handle->read };
+            $string = do { local $/; $reader->open_handle->getline };
         }
         else {
             open my $fh, '<:encoding(UTF-8)', $reader->input;

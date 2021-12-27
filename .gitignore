@@ -1,0 +1,8 @@
+/dev
+YAML-PP-Ref-*
+/cover_db
+/nytprof
+/nytprof.out
+/.build
+/pod2htmd.tmp
+/gh-pages
