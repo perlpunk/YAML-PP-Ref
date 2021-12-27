@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.020;
+use 5.008000;
 
 use ExtUtils::MakeMaker;
 
@@ -13,14 +13,10 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => 0
   },
   "DISTNAME" => "YAML-PP-Ref",
-  "EXE_FILES" => [
-    "bin/ref.pl"
-  ],
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.020",
+  "MIN_PERL_VERSION" => "5.008000",
   "NAME" => "YAML::PP::Ref",
   "PREREQ_PM" => {
-    "Data::Dumper" => 0,
     "Scalar::Util" => "1.07",
     "YAML::PP" => 0,
     "YAML::PP::Parser" => 0,
@@ -45,7 +41,6 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Data::Dumper" => 0,
   "File::Spec" => 0,
   "FindBin" => 0,
   "IO::Handle" => 0,
