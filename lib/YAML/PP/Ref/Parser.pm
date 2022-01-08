@@ -76,7 +76,12 @@ sub parse {
             }
         }
         $info->{name} = $event;
-        return $co->$event($info);
+        if (ref $co eq 'CODE') {
+            $co->($self, $event, $info);
+        }
+        else {
+            return $co->$event($info);
+        }
     };
     my $refrec = PerlYamlReferenceParserReceiver->new(
         callback => $cb,
