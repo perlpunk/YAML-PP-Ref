@@ -1,5 +1,10 @@
 Revision history for Perl module YAML::PP::Ref
 
+0.01_001 2022-01-08 19:07:04+01:00
+
+    - Make events compatible with YAML::PP
+    - Support receiver coderefs
+
 0.01 2021-12-28 00:56:50+01:00
 
     - First Release
