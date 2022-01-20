@@ -2,6 +2,8 @@ package YAML::PP::Ref::Parser;
 use strict;
 use warnings;
 
+our $VERSION = '0.000'; # VERSION
+
 use Scalar::Util qw/ openhandle /;
 use YAML::Parser;
 use YAML::PP::Common qw(

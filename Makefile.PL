@@ -18,7 +18,7 @@ my %WriteMakefileArgs = (
   "NAME" => "YAML::PP::Ref",
   "PREREQ_PM" => {
     "Scalar::Util" => "1.07",
-    "YAML::PP" => 0,
+    "YAML::PP" => "0.027",
     "YAML::PP::Common" => 0,
     "YAML::PP::Parser" => 0,
     "YAML::Parser" => 0,
@@ -34,7 +34,7 @@ my %WriteMakefileArgs = (
     "Test::More" => "0.98",
     "utf8" => 0
   },
-  "VERSION" => "0.01_001",
+  "VERSION" => "0.01_002",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -48,7 +48,7 @@ my %FallbackPrereqs = (
   "IPC::Open3" => 0,
   "Scalar::Util" => "1.07",
   "Test::More" => "0.98",
-  "YAML::PP" => 0,
+  "YAML::PP" => "0.027",
   "YAML::PP::Common" => 0,
   "YAML::PP::Parser" => 0,
   "YAML::Parser" => 0,
